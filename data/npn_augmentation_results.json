@@ -1,0 +1,77 @@
+{
+  "no_augment": {
+    "test": {
+      "spearman_r": 0.7653722361103528,
+      "pearson_r": 0.8090446591377258,
+      "mae": 0.39817413687705994,
+      "exact_match": 0.6839104090023804
+    },
+    "npn_invariance": {
+      "mean_std": 1.196135325927513,
+      "consistency": 0.0,
+      "canonical_rs": 0.7880837217323263,
+      "npn_averaged_rs": 0.2543137998423849,
+      "canonical_mae": 0.40646792221069333,
+      "npn_averaged_mae": 1.847748266912276
+    },
+    "n_augment": 0,
+    "effective_train_size": 431288
+  },
+  "1x_augment": {
+    "test": {
+      "spearman_r": 0.7644649537114918,
+      "pearson_r": 0.8080798983573914,
+      "mae": 0.3980182111263275,
+      "exact_match": 0.6841700930534517
+    },
+    "npn_invariance": {
+      "mean_std": 0.14705974819224832,
+      "consistency": 0.378,
+      "canonical_rs": 0.7879195654627329,
+      "npn_averaged_rs": 0.7269965424321637,
+      "canonical_mae": 0.4016196165084839,
+      "npn_averaged_mae": 0.44744504823992326
+    },
+    "n_augment": 1,
+    "effective_train_size": 862576
+  },
+  "3x_augment": {
+    "test": {
+      "spearman_r": 0.7588706699641135,
+      "pearson_r": 0.80422443151474,
+      "mae": 0.3970972001552582,
+      "exact_match": 0.6826228089158191
+    },
+    "npn_invariance": {
+      "mean_std": 0.11468679631820568,
+      "consistency": 0.53,
+      "canonical_rs": 0.767736262980294,
+      "npn_averaged_rs": 0.7501551838130543,
+      "canonical_mae": 0.4060367679595947,
+      "npn_averaged_mae": 0.42380573586494696
+    },
+    "n_augment": 3,
+    "effective_train_size": 1725152
+  },
+  "7x_augment": {
+    "n_augment": 7,
+    "effective_train_size": 3450304,
+    "best_epoch": 58,
+    "train_time_s": 1445.512455701828,
+    "feat_time_s": 304.9993984699249,
+    "test": {
+      "spearman_r": 0.7720226734691366,
+      "pearson_r": 0.8186941742897034,
+      "mae": 0.37947431206703186,
+      "exact_match": 0.7018718892014716
+    },
+    "npn_invariance": {
+      "mean_std": 0.09119709102326475,
+      "consistency": 0.656,
+      "canonical_rs": 0.7859810712220786,
+      "npn_averaged_rs": 0.7766663432075527,
+      "canonical_mae": 0.3717167339324951,
+      "npn_averaged_mae": 0.38190640064977827
+    }
+  }
+}

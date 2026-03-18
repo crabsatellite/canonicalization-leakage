@@ -1,0 +1,23 @@
+{
+  "npn_augment": {
+    "val_rs": 0.7610829804326075,
+    "mean_std": 0.14083638448604596,
+    "consistency": 0.388,
+    "canonical_rs": 0.7795561582591998,
+    "npn_averaged_rs": 0.7283028116494872
+  },
+  "duplication": {
+    "val_rs": 0.786639296074236,
+    "mean_std": 1.5997382537265912,
+    "consistency": 0.0,
+    "canonical_rs": 0.8008407633712211,
+    "npn_averaged_rs": 0.17165718481158498
+  },
+  "noise_augment": {
+    "val_rs": 0.7790078652504149,
+    "mean_std": 0.3983950833155545,
+    "consistency": 0.0,
+    "canonical_rs": 0.7923634022752755,
+    "npn_averaged_rs": 0.6905103499524234
+  }
+}
