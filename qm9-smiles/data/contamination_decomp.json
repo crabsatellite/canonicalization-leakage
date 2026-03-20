@@ -1,0 +1,42 @@
+[
+  {
+    "group": "A_bigrams",
+    "canonical_rs": 0.9133966069955072,
+    "smiles_averaged_rs": 0.8940598688360715,
+    "mean_std": 0.01026263511693482,
+    "consistency": 0.0,
+    "delta": 0.019336738159435707
+  },
+  {
+    "group": "B_morgan",
+    "canonical_rs": 0.8050163656983689,
+    "smiles_averaged_rs": 0.8050163656983689,
+    "mean_std": 0.0,
+    "consistency": 1.0,
+    "delta": 0.0
+  },
+  {
+    "group": "C_descriptors",
+    "canonical_rs": 0.8719314707622294,
+    "smiles_averaged_rs": 0.8719314707622294,
+    "mean_std": 0.0,
+    "consistency": 1.0,
+    "delta": 0.0
+  },
+  {
+    "group": "BC_invariant",
+    "canonical_rs": 0.9097538497444673,
+    "smiles_averaged_rs": 0.9097538497444673,
+    "mean_std": 0.0,
+    "consistency": 1.0,
+    "delta": 0.0
+  },
+  {
+    "group": "all",
+    "canonical_rs": 0.9406128004295125,
+    "smiles_averaged_rs": 0.9324155039015019,
+    "mean_std": 0.007179955224546347,
+    "consistency": 0.006,
+    "delta": 0.0081972965280106
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "n_augment": 1,
+    "train_size": 187438,
+    "test_rs": 0.9589921081689374,
+    "test_mae": 0.010569843463599682,
+    "tag": "mlp_1x_augment"
+  },
+  {
+    "n_augment": 3,
+    "train_size": 374876,
+    "test_rs": 0.9705078017486586,
+    "test_mae": 0.00877121277153492,
+    "tag": "mlp_3x_augment"
+  },
+  {
+    "n_augment": 7,
+    "train_size": 749752,
+    "test_rs": 0.974247577088979,
+    "test_mae": 0.008029988966882229,
+    "tag": "mlp_7x_augment"
+  }
+]

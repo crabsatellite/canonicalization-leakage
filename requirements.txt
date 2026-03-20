@@ -1,0 +1,10 @@
+numpy>=1.24
+torch>=2.0
+scipy>=1.10
+matplotlib>=3.7
+
+# Optional: GNN experiments (src/train_gnn.py)
+# torch-geometric>=2.4
+
+# Optional: QM9/SMILES experiments (qm9-smiles/)
+# rdkit-pypi>=2023.9

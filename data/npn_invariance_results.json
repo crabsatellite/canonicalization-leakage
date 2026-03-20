@@ -1,0 +1,29 @@
+{
+  "n_test": 1000,
+  "k_transforms": 50,
+  "total_time_s": 10.047896146774292,
+  "prediction_spread": {
+    "mean_std": 0.9956923904641652,
+    "median_std": 0.9997280408570828,
+    "max_std": 1.5343310922334907,
+    "mean_range": 4.250870779514313,
+    "max_range": 6.651793956756592
+  },
+  "consistency": {
+    "exact_rounded_consistency": 0.0,
+    "mean_majority_agreement": 0.39303921568627453
+  },
+  "accuracy": {
+    "canonical_mae": 0.39797863364219666,
+    "canonical_exact": 0.702,
+    "npn_averaged_mae": 1.3906184190797806,
+    "npn_averaged_exact": 0.119
+  },
+  "correlation": {
+    "canonical_pearson": 0.8110451102256775,
+    "canonical_spearman": 0.7725652067234515,
+    "npn_averaged_pearson": 0.4581229559204344,
+    "npn_averaged_spearman": 0.41732089657342764
+  },
+  "verdict": "NOT INVARIANT"
+}

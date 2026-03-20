@@ -1,0 +1,52 @@
+{
+  "project": "canonicalization-leakage",
+  "description": "Neural prediction of circuit complexity + mechanistic interpretability",
+
+  "data": {
+    "npn5_csv": "data/npn5_circuit_sizes.csv",
+    "measures_csv": "data/measures.csv",
+    "knuthies_dat": "../data/optimal5/knuthies.dat",
+    "split_ratio": [0.7, 0.15, 0.15],
+    "random_seed": 42
+  },
+
+  "features": {
+    "truth_table_dim": 32,
+    "fourier_dim": 32,
+    "anf_dim": 32,
+    "handcrafted_measures": 10
+  },
+
+  "models": {
+    "mlp": {
+      "hidden_dims": [256, 256, 128],
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 1e-4,
+      "epochs": 60,
+      "batch_size": 2048
+    },
+    "gnn": {
+      "type": "GIN",
+      "hidden_dim": 64,
+      "num_layers": 4,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "epochs": 100,
+      "batch_size": 512
+    },
+    "transformer": {
+      "d_model": 64,
+      "nhead": 4,
+      "num_layers": 3,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "epochs": 100,
+      "batch_size": 1024,
+      "max_seq_len": 64
+    }
+  },
+
+  "device": "cuda",
+  "linear_baseline_r": 0.5627
+}

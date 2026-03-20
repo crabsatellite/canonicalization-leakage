@@ -1,0 +1,40 @@
+{
+  "data": {
+    "dataset": "QM9",
+    "target": "gap",
+    "target_index": 7,  "_note_target_index": "Column index in MoleculeNet QM9 CSV (after smiles): A,B,C,mu,alpha,homo,lumo,gap=7",
+    "split_ratio": [0.7, 0.15, 0.15],
+    "random_seed": 42,
+    "max_atoms": 9,
+    "n_random_smiles": 30,
+    "top_n_bigrams": 64,
+    "morgan_bits": 64,
+    "morgan_radius": 2
+  },
+  "models": {
+    "mlp": {
+      "hidden_dims": [256, 256, 128],
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 1e-4,
+      "epochs": 60,
+      "batch_size": 2048
+    }
+  },
+  "_targets_note": "Standard QM9 property indices (0-based from mu). MoleculeNet CSV has 3 extra columns (A,B,C) before mu, so CSV target_index = standard_index + 3.",
+  "targets": {
+    "mu": {"index": 0, "csv_index": 3, "unit": "D", "description": "Dipole moment"},
+    "alpha": {"index": 1, "csv_index": 4, "unit": "a0^3", "description": "Isotropic polarizability"},
+    "homo": {"index": 2, "csv_index": 5, "unit": "Ha", "description": "HOMO energy"},
+    "lumo": {"index": 3, "csv_index": 6, "unit": "Ha", "description": "LUMO energy"},
+    "gap": {"index": 4, "csv_index": 7, "unit": "Ha", "description": "HOMO-LUMO gap"},
+    "r2": {"index": 5, "csv_index": 8, "unit": "a0^2", "description": "Electronic spatial extent"},
+    "zpve": {"index": 6, "csv_index": 9, "unit": "Ha", "description": "Zero-point vibrational energy"},
+    "u0": {"index": 7, "csv_index": 10, "unit": "Ha", "description": "Internal energy at 0K"},
+    "u298": {"index": 8, "csv_index": 11, "unit": "Ha", "description": "Internal energy at 298K"},
+    "h298": {"index": 9, "csv_index": 12, "unit": "Ha", "description": "Enthalpy at 298K"},
+    "g298": {"index": 10, "csv_index": 13, "unit": "Ha", "description": "Free energy at 298K"},
+    "cv": {"index": 11, "csv_index": 14, "unit": "cal/mol/K", "description": "Heat capacity at 298K"}
+  },
+  "linear_baseline_r": 0.5627
+}

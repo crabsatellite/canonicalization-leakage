@@ -1,0 +1,10 @@
+# Large data files
+data/qm9.csv
+data/prepared.npz
+data/*.npz
+
+# Model checkpoints
+checkpoints/
+
+# Python cache
+__pycache__/
